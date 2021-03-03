@@ -1,6 +1,7 @@
 #include<opencv2\opencv.hpp>
 #include<highgui.hpp>
 using namespace cv;
+using namespace std;
 int main(int argc, char** argv)
 {
 	// read image
@@ -31,11 +32,9 @@ int main(int argc, char** argv)
 			p1++;
 		}
 	}
-
-	// create windows
+	// create a windows
 	namedWindow("My Test", WINDOW_AUTOSIZE);
 	namedWindow("My Invert Image", WINDOW_AUTOSIZE);
-
 	// display image
 	imshow("My Test", image);
 	imshow("My Invert Image", invertImage);
@@ -44,5 +43,6 @@ int main(int argc, char** argv)
 	waitKey(0);
 	destroyWindow("My Test");
 	destroyWindow("My Invert Image");
+
 	return 0;
 }

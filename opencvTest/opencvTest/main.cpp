@@ -33,6 +33,7 @@ int main(int argc, char** argv)
 		}
 	}
 	// create a windows
+	// in opencv4 WINDOW_AUTOSIZE --> AUTOSIZE
 	namedWindow("My Test", WINDOW_AUTOSIZE);
 	namedWindow("My Invert Image", WINDOW_AUTOSIZE);
 	// display image
